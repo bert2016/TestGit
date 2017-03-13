@@ -17,5 +17,6 @@ public class MainActivity extends AppCompatActivity {
         b = 1+2;
         c = b + a;
         Toast.makeText(MainActivity.this, c+"", Toast.LENGTH_SHORT).show();
+        Toast.makeText(MainActivity.this, a+b+c+"", Toast.LENGTH_SHORT).show();
     }
 }
