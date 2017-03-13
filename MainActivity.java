@@ -2,12 +2,12 @@ package com.gamegamix.testgit;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    private int a,b;
+    private int a,b,c;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -15,5 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         a =1 ;
         b = 1+2;
+        c = b + a;
+        Toast.makeText(MainActivity.this, c+"", Toast.LENGTH_SHORT).show();
     }
 }
